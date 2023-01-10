@@ -35,3 +35,11 @@ string[] FindElements(string[] array, int arrSize)
     }
     return newArray;
 }
+
+
+
+int newSize = FindSizeOfArr(arr);
+string[] result = FindElements(arr, newSize);
+PrintArray(arr);
+Console.Write(" --> ");
+PrintArray(result);
