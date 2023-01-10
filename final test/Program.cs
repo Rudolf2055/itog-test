@@ -51,5 +51,5 @@ string[] FindElements(string[] array, int arrSize)
 int newSize = FindSizeOfArr(arr);
 string[] result = FindElements(arr, newSize);
 PrintArray(arr);
-Console.Write(" --> ");
+Console.Write(" ---> ");
 PrintArray(result);
