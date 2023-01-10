@@ -7,6 +7,17 @@ arr[3] = "Have a good day";
 arr[4] = "!";
 
 
+void PrintArray(string[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
+        else Console.Write($"{array[i]}]");
+    }
+}
+
+
 int FindSizeOfArr(string [] array)
 {
     int count = 0;
@@ -35,7 +46,6 @@ string[] FindElements(string[] array, int arrSize)
     }
     return newArray;
 }
-
 
 
 int newSize = FindSizeOfArr(arr);
